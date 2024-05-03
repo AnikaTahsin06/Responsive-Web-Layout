@@ -15,6 +15,9 @@
 }
 
 .form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 65vh;  
   width: 30vw;
   background-color: rgb(233, 191, 233);
@@ -23,6 +26,26 @@
   box-shadow: 0 4px 6px rgba(56, 29, 50, 0.1);
   margin: 5px;
 
+}
+
+.form-contents {
+  height: 50vh;  
+  width: 25vw;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.login-form h3 {
+  color: white;
+  font-family:sans-serif;
+}
+
+.login-form .submit {
+  width: 5vw;
 }
 
 .sub-container {
