@@ -5,12 +5,29 @@
   font-family: "Poppins", sans-serif;
 }
 
-section {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
+.container {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  height: 98.5vh;
+  border: 2px solid palevioletred;  
+  margin: 5px;
+}
+
+.form-container {
+  height: 65vh;  
+  width: 30vw;
+  background-color: rgb(233, 191, 233);
+  border: 2px solid plum;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(56, 29, 50, 0.1);
+  margin: 5px;
+
+}
+
+.sub-container {
+  height: 30vh;  
+  width: 8.33vw;
   background: #2196f3;
+  margin: 5px;
 }
