@@ -11,6 +11,10 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100px 200px 300px;
+  grid-gap: 10px;
+  justify-items: stretch;
+  align-items: stretch;
 }
 
 .grid-container > div {
@@ -31,10 +35,13 @@ body {
 }
 .grid-container > div:nth-child(4) {
   grid-column: 2 / 6;
+  /* align-self: end; */
 }
 .grid-container > div:nth-child(5) {
   grid-column: span 3;
 }
 .grid-container > div:nth-child(6) {
   grid-column: span 3;
+  /* justify-self: end; */
+  /* align-self: start; */
 }
