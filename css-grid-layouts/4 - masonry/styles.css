@@ -69,3 +69,26 @@ main .short {
 main .tall {
   grid-row: span 2;
 }
+
+@media screen and (max-width: 960px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  main {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+
+  nav {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  nav h1 {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+  }
+}
