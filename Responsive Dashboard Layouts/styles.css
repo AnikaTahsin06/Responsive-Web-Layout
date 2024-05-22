@@ -1,9 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 60px 1fr;
+}
 .header {
     background-color: #fff;
 }
 
 .sidebar {
     background-color: #1c1f23;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
 }
 
 .main {
