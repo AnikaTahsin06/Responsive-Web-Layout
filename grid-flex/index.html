@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flex Layout Teaching Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="menu">
+            <h2>Properties</h2>
+            <div>
+                <h3>Container</h3>
+                <select id="container-properties">
+                    <option value="">Select Property</option>
+                    <option value="display: flex;">display: flex</option>
+                    <option value="display: grid;">display: grid</option>
+                    <option value="flex-direction: row;">flex-direction: row</option>
+                    <option value="flex-direction: column;">flex-direction: column</option>
+                    <option value="grid-template-columns: 1fr 1fr;">grid-template-columns: 1fr 1fr</option>
+                    <option value="grid-template-rows: auto;">grid-template-rows: auto</option>
+                </select>
+            </div>
+            <div>
+                <h3>Child</h3>
+                <select id="child-properties">
+                    <option value="">Select Property</option>
+                    <option value="flex: 1;">flex: 1</option>
+                    <option value="order: 1;">order: 1</option>
+                    <option value="grid-column: span 2;">grid-column: span 2</option>
+                </select>
+            </div>
+        </div>
+        <div id="responsive-area">
+            <h2>Design Area</h2>
+            <div id="resize-handle-left"></div> <!-- Resizable handle on the left -->
+            <div id="design-container">
+                <div class="design-child">Child 1</div>
+                <div class="design-child">Child 2</div>
+                <div class="design-child">Child 3</div>
+                <div class="design-child">Child 4</div>
+            </div>
+            <div id="resize-handle-right"></div> <!-- Resizable handle on the right -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

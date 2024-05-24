@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling of the entire page */
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+#menu {
+    width: 25%;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+}
+
+#responsive-area {
+    width: 75%;
+    padding: 10px;
+    position: relative; /* Relative positioning for handle placement */
+    overflow: hidden; /* Hide overflow of resizable area */
+}
+
+#resizable-container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: relative;
+}
+
+#design-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+}
+
+.design-child {
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    flex: 1;
+}
+
+/* Resizable handles */
+#resize-handle-left,
+#resize-handle-right {
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    top: 0;
+    cursor: ew-resize;
+}
+
+#resize-handle-left {
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#resize-handle-right {
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
